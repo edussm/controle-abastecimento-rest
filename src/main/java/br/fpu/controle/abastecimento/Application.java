@@ -21,7 +21,8 @@ import br.fpu.controle.abastecimento.repository.VeiculoRepository;
 @SpringBootApplication
 public class Application {
     public static void main(String[] args) {
-        ConfigurableApplicationContext ctx = SpringApplication.run(Application.class, args);
+        ConfigurableApplicationContext ctx = 
+        		SpringApplication.run(Application.class, args);
         
         CombustivelRepository combustivelRepository = ctx.getBean(CombustivelRepository.class);
         PostoRepository postoRepository = ctx.getBean(PostoRepository.class);
